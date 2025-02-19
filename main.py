@@ -41,6 +41,7 @@ class RowBasedToXMLConverter:
         # The current parent element, initially None
         self.parent = None
 
+    
     def add_sub_element(self, node, tag, row):
         """
         Create and append sub-elements to the given node based on the row.
@@ -50,6 +51,7 @@ class RowBasedToXMLConverter:
             field_name = data_format[tag]['fields'][col - 1]
             ET.SubElement(node, field_name).text = row[col]
 
+    
     def process_row(self, row):
         """
         Process a single row and create the corresponding XML element.
@@ -97,6 +99,7 @@ class RowBasedToXMLConverter:
             self.add_sub_element(target_node, current_tag, row)
         return True
 
+    
     def build_tree(self):
         """
         Read the row based file and build the XML tree.
@@ -126,6 +129,7 @@ class RowBasedToXMLConverter:
         csvfile.close()
         return True
 
+    
     def write_xml(self):
         """
         Write the XML tree to the output file.
