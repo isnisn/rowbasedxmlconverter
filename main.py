@@ -2,17 +2,6 @@
 import csv
 from lxml import etree as ET
 
-"""
-Row based file Format: (pipe-delimited)
-P|förnamn|efternamn
-T|mobilnummer|fastnätsnummer
-A|gata|stad|postnummer
-F|namn|födelseår
-Rules:
-    P can be followed by T, A and F
-    F can be followed by T and A
-"""
-
 # Constants for tag identifiers.
 PERSON_TAG = "P"
 ADDRESS_TAG = "A"
