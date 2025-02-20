@@ -15,7 +15,7 @@ This application converts a pipe-delimited row based file into an XML file.
 
 1. **Prepare your Row Based File**
 
-   - Create a file named `input` in the same directory as your code.
+   - Create a file named `input`(one is provided) in the same directory as your code.
    - Format your file with a pipe (`|`) as the delimiter. For example:
 
      ```text
@@ -27,9 +27,6 @@ This application converts a pipe-delimited row based file into an XML file.
 
 2. **Run the Application**
 
-   - Open a terminal in the project directory.
-   - Run the `main.py` file using Python:
-
      ```bash
      python main.py
      ```
@@ -38,3 +35,16 @@ This application converts a pipe-delimited row based file into an XML file.
 
    - After running, a file named `output.xml` will be generated in the same directory.
    - The generated XML file will contain the XML representation of your row based data.
+
+4. **Run the Tests**
+ 
+   - Use the `unittest` module to run the tests:
+
+     ```bash
+     python -m unittest discover tests
+     ```
+
+5. **Test Assertions**
+
+   - The tests will check the basic functionality of the `RowBasedToXMLConverter`, ensuring that it correctly processes and converts the input data to XML.
+
