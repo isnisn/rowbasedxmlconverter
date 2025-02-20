@@ -76,7 +76,7 @@ class RowBasedToXMLConverter:
                 )
                 return False
             # Avoid nesting family elements inside family elements
-            if self.parent.tag == data_format[FAMILY_TAG]["xml_tag"]:
+            if self.parent.tag == data_format[current_tag]["xml_tag"]:
                 self.parent = self.parent.getparent()
             target_node = ET.SubElement(self.parent, current_xml_tag)
             # Update parent to the new family element
