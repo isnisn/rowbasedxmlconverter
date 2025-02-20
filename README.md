@@ -48,3 +48,8 @@ This application converts a pipe-delimited row based file into an XML file.
 
    - The tests will check the basic functionality of the `RowBasedToXMLConverter`, ensuring that it correctly processes and converts the input data to XML.
 
+6. **Shortcomings**
+   - More extensive tests
+   - Constants and tags in `data_format` in `utils/converter.py` could be loaded dynamically via a yaml-file to increase the flexibility and scalability.
+   - Logging features
+   - Dockerize the application and put it behind an API-endpoint
