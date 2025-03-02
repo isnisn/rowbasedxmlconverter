@@ -52,4 +52,4 @@ This application converts a pipe-delimited row based file into an XML file.
    - More extensive tests
    - Constants and tags in `data_format` in `utils/converter.py` could be loaded dynamically via a yaml-file to increase the flexibility and scalability.
    - Logging features
-   - Dockerize the application and put it behind an API-endpoint
+   - Dockerize the application and put it behind an API-endpoint for deployment as a microservice or similiar in the cloud
